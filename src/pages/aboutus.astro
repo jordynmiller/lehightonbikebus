@@ -6,9 +6,17 @@ import Container from "@/components/container.astro";
 import Sectionhead from "@/components/sectionhead.astro";
 
 // Filter team entries with 'draft: false' & date before current date
-const publishedTeamMembers = await getCollection("team", ({ data }) => {
+
+const publishedTeamMembersRaw = await getCollection("team", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
 });
+
+// Sort manually by name: Jordyn, Paul, Lola
+const publishedTeamMembers = [
+  publishedTeamMembersRaw.find((entry) => entry.data.name.toLowerCase().includes("jordyn")),
+  publishedTeamMembersRaw.find((entry) => entry.data.name.toLowerCase().includes("paul")),
+  publishedTeamMembersRaw.find((entry) => entry.data.name.toLowerCase().includes("lola")),
+].filter(Boolean);
 ---
 
 <Layout title="About">
