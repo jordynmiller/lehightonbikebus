@@ -1,0 +1,68 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+
+// Filter team entries with 'draft: false' & date before current date
+const publishedTeamMembers = await getCollection("team", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+---
+
+<Layout title="About">
+  <Container>
+    <Sectionhead>
+    <Fragment slot="title">So Who's Behind Lehighton Bike Bus?</Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+      {
+        publishedTeamMembers.map((teamMemberEntry) => (
+          <div class="group">
+            <div class="w-full aspect-square">
+              <Picture
+                src={teamMemberEntry.data.avatar.src}
+                alt={teamMemberEntry.data.avatar.alt}
+                sizes="(max-width: 800px) 100vw, 400px"
+                width={400}
+                height={400}
+                class="w-full rounded-sm transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
+              />
+            </div>
+
+            <div class="mt-4 text-center">
+              <h2 class="text-lg text-gray-800">{teamMemberEntry.data.name}</h2>
+              <h3 class="text-sm text-slate-500">
+                {teamMemberEntry.data.title}
+              </h3>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <section class="mt-10 mx-auto max-w-4xl p-6 bg-white rounded-lg">
+    <h3 class="text-2xl font-semibold mb-2">Who We Are</h3>
+    <p class="mb-4">We’re Lehighton community members who want to make it joyful, fun, and safe to bike to school together. With creativity and courage, we’re determined to make our roads accessible to active transportation. As a community-driven effort, we're always looking for volunteers to help on rides and get the word out about Bike Bus.</p>
+
+    <h3 class="text-2xl font-semibold mb-2">What We Do</h3>
+    <ul class="list-disc list-inside mb-4">
+      <li>Build community support in town and schools</li>
+      <li>Create rider tools, time tables, and routes</li>
+      <li>Advise on transportation infrastructure redesign</li>
+    </ul>
+
+    <h3 class="text-2xl font-semibold mb-2">What's a Bike Bus?</h3>
+    <p class="mb-4">A bike bus is an adult-led scheduled bike ride that follows a specific route and timetable. There are bike buses all over the world. By riding with the Lehighton Bike Bus you’re part of a global movement!</p>
+
+    <h3 class="text-2xl font-semibold mb-2">Want to learn more?</h3>
+    <p>The Lehighton Bike Bus is on a mission to make biking together to school joyful, fun, and safe. Download the PDF file to learn more about us, bike safety myths and facts, and read our Bike Bus Pledge, or email us if you have additional questions.
+    </p>
+    <p>
+    <a href="/pdfs/SRTSBikeBusGuide2025.pdf" download class="text-red-800 font-bold ">Bike Bus Info</a>  |  <span class="text-red-800 font-bold">hello@lehightonbikebus.com</span>
+    </section>
+
+  </Container>
+</Layout>
