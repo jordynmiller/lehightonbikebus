@@ -21,7 +21,7 @@ Before setting out for the bike bus, use the following checklist to ensure bikes
 ## Check helmet fit
 Children under 12 years of age are <u>**required**</u> to wear a helmet when riding a bike in Pennsylvania.
 <p align="center">
-  <img src="/src/assets/helmetfit.png" alt="Helmet Fit" width="400" />
+  <img src="/assets/helmetfit.png" alt="Helmet Fit" width="400" />
 </p>
 
 ## Check bike fit
@@ -33,7 +33,7 @@ road bike and 3 to 4 inches if using a mountain bike.
 - When sitting on the bike, the rider should be able to touch
 the ground with both feet.
 <p align="center">
-  <img src="/src/assets/bikefit.png" alt="Bike Fit" width="300" />
+  <img src="/assets/bikefit.png" alt="Bike Fit" width="300" />
 </p>
 
 ## Check bike condition using the ABC quick check
