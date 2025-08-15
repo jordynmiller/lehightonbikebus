@@ -3,7 +3,7 @@ draft: false
 title: "Bike Bus Equipment Checklist"
 snippet: "Bike Bus Equipment Checklist."
 image: {
-    src: "/src/assets/abcquickcheck.png",
+    src: "/assets/abcquickcheck.png",
     alt: "bike bus equipment checklist"
 }
 publishDate: "2025-08-01 10:00"
