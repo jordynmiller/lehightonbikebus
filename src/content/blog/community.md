@@ -6,7 +6,7 @@ image: {
     src: "/assets/community2.png",
     alt: "community"
 }
-publishDate: "2025-08-01 10:00"
+publishDate: "2025-08-01 8:00"
 category: "Community"
 author: "Jordyn Miller"
 tags: [community, bikebus]

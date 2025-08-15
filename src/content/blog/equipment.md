@@ -6,7 +6,7 @@ image: {
     src: "/assets/abcquickcheck.png",
     alt: "bike bus equipment checklist"
 }
-publishDate: "2025-08-01 8:00"
+publishDate: "2025-08-01 10:00"
 category: "Equipment"
 author: "Jordyn Miller"
 tags: [safety, bikebus]
