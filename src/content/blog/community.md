@@ -3,7 +3,7 @@ draft: false
 title: "Community"
 snippet: "Community"
 image: {
-    src: "/src/assets/community2.png",
+    src: "/assets/community2.png",
     alt: "community"
 }
 publishDate: "2025-08-01 10:00"
@@ -12,7 +12,7 @@ author: "Jordyn Miller"
 tags: [community, bikebus]
 ---
 <p align="center">
-  <img src="/src/assets/community.png" alt="community" width="100%" />
+  <img src="/assets/community.png" alt="community" width="100%" />
 </p>
 
 # Student Benefits of Safe Routes to School

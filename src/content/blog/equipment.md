@@ -39,7 +39,7 @@ the ground with both feet.
 ## Check bike condition using the ABC quick check
 It is important to make sure that bicycles are in good operating condition before any ride. The ABC Quick Check is an inspection approach that encourages review of Air, Brakes, Chain, and Quick release parts, all of which should be inspected and in good working condition before each ride.
 <p align="center">
-  <img src="/src/assets/abcquickcheck.png" alt="ABC Quick Check" width="600" />
+  <img src="/assets/abcquickcheck.png" alt="ABC Quick Check" width="600" />
 </p>
 
 - Air – Check the air pressure, spin the wheels, and make sure the tires are not worn out.
