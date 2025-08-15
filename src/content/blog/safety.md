@@ -6,7 +6,7 @@ image: {
     src: "/assets/handsignals.png",
     alt: "bike bus safety and policy checklist"
 }
-publishDate: "2025-08-01 10:00"
+publishDate: "2025-08-01 9:00"
 category: "Safety + Policy"
 author: "Jordyn Miller"
 tags: [safety, bikebus]
