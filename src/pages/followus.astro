@@ -6,6 +6,16 @@ import Container from "@/components/container.astro";
 import Sectionhead from "@/components/sectionhead.astro";
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T8YDC5BXMF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T8YDC5BXMF');
+</script>
+
 <Layout title="Bike Bus World">
   <h2 style="text-align: center; margin-top: 1.5rem; font-size: 2.5rem;">Check out other Bike Busses around the world!</h2>
 

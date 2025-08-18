@@ -7,6 +7,16 @@ import Logos from "@/components/logos.astro";
 import Layout from "@/layouts/Layout.astro";
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T8YDC5BXMF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T8YDC5BXMF');
+</script>
+
 <Layout title="">
   <Container>
     <Hero />
