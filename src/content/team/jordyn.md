@@ -1,7 +1,7 @@
 ---
 draft: false
 name: "Jordyn Miller-Acosta"
-title: "Bike Bus Organizer"
+title: "Bike Bus Captain"
 avatar: {
     src: "/assets/jordyn.png",
     alt: "Jordyn Miller-Acosta"
